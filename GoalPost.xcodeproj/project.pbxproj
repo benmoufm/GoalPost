@@ -13,6 +13,7 @@
 		86237DFD2018C3AB00A845EF /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86237DFB2018C3AB00A845EF /* GoalPost.xcdatamodeld */; };
 		86237DFF2018C3AB00A845EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86237DFE2018C3AB00A845EF /* Assets.xcassets */; };
 		86237E022018C3AB00A845EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86237E002018C3AB00A845EF /* LaunchScreen.storyboard */; };
+		86237E0E2018CD9700A845EF /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		86237DFE2018C3AB00A845EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86237E012018C3AB00A845EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86237E032018C3AB00A845EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		86237E0A2018C3D700A845EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86237E0E2018CD9700A845EF /* GoalTableViewCell.swift in Sources */,
 				86237DF72018C3AB00A845EF /* GoalsViewController.swift in Sources */,
 				86237DF52018C3AB00A845EF /* AppDelegate.swift in Sources */,
 				86237DFD2018C3AB00A845EF /* GoalPost.xcdatamodeld in Sources */,
