@@ -30,5 +30,6 @@ class CreateGoalViewController: UIViewController {
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {
+        dismissDetail()
     }
 }
