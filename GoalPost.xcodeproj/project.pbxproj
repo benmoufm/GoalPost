@@ -14,6 +14,7 @@
 		86237DFF2018C3AB00A845EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86237DFE2018C3AB00A845EF /* Assets.xcassets */; };
 		86237E022018C3AB00A845EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86237E002018C3AB00A845EF /* LaunchScreen.storyboard */; };
 		86237E0E2018CD9700A845EF /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */; };
+		86237E102018D32400A845EF /* UITableViewDelegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E0F2018D32400A845EF /* UITableViewDelegate+DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		86237E012018C3AB00A845EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86237E032018C3AB00A845EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		86237E0F2018D32400A845EF /* UITableViewDelegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+DataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		86237E0C2018C40200A845EF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				86237E0F2018D32400A845EF /* UITableViewDelegate+DataSource.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				86237DF72018C3AB00A845EF /* GoalsViewController.swift in Sources */,
 				86237DF52018C3AB00A845EF /* AppDelegate.swift in Sources */,
 				86237DFD2018C3AB00A845EF /* GoalPost.xcdatamodeld in Sources */,
+				86237E102018D32400A845EF /* UITableViewDelegate+DataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
