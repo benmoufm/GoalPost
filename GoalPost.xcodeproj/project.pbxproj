@@ -16,6 +16,7 @@
 		86237E0E2018CD9700A845EF /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */; };
 		86237E102018D32400A845EF /* UITableViewDelegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E0F2018D32400A845EF /* UITableViewDelegate+DataSource.swift */; };
 		86237E122018D4B900A845EF /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E112018D4B900A845EF /* GoalType.swift */; };
+		86237E142018D92D00A845EF /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E132018D92D00A845EF /* CreateGoalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		86237E0F2018D32400A845EF /* UITableViewDelegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+DataSource.swift"; sourceTree = "<group>"; };
 		86237E112018D4B900A845EF /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		86237E132018D92D00A845EF /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				86237DF62018C3AB00A845EF /* GoalsViewController.swift */,
+				86237E132018D92D00A845EF /* CreateGoalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86237E0E2018CD9700A845EF /* GoalTableViewCell.swift in Sources */,
+				86237E142018D92D00A845EF /* CreateGoalViewController.swift in Sources */,
 				86237DF72018C3AB00A845EF /* GoalsViewController.swift in Sources */,
 				86237E122018D4B900A845EF /* GoalType.swift in Sources */,
 				86237DF52018C3AB00A845EF /* AppDelegate.swift in Sources */,
