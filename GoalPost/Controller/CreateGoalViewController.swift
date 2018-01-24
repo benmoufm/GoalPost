@@ -17,6 +17,7 @@ class CreateGoalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextButton.bindToKeyboard()
     }
 
     //MARK : - Actions
