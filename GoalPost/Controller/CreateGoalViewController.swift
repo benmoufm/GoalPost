@@ -52,7 +52,7 @@ class CreateGoalViewController: UIViewController, UITextViewDelegate {
                 as? FinishGoalViewController
                 else { return }
             finishGoalViewController.initData(description: goalTextView.text!, type: goalType)
-            presentDetail(finishGoalViewController)
+            presentingViewController?.presentSecondaryDetail(finishGoalViewController)
         }
     }
 
