@@ -325,7 +325,7 @@
         <!--Finish Goal View Controller-->
         <scene sceneID="yew-ZG-wX9">
             <objects>
-                <viewController id="pUz-Ft-s0X" customClass="FinishGoalViewController" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="finishGoalViewController" id="pUz-Ft-s0X" customClass="FinishGoalViewController" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1r1-Rt-HhE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -13,8 +13,17 @@ class FinishGoalViewController: UIViewController {
     @IBOutlet weak var createGoalButton: UIButton!
     @IBOutlet weak var pointsTextField: UITextField!
 
+    //MARK: - Variables
+    var goalDescription: String!
+    var goalType: GoalType!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    func initData(description: String, type: GoalType) {
+        self.goalDescription = description
+        self.goalType = type
     }
 
     //MARK: - Actions
