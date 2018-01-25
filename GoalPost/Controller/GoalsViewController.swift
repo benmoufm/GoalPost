@@ -47,6 +47,21 @@ class GoalsViewController: UIViewController {
         }
     }
 
+    //MARK: - Animation functions
+    func animateViewUp() {
+        undoViewHeightConstraint.constant = 50
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
+
+    func animateViewDown() {
+        undoViewHeightConstraint.constant = 0
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
+
     //MARK: - Actions
     @IBAction func addGoalButtonPressed(_ sender: Any) {
         guard let createGoalViewController =
