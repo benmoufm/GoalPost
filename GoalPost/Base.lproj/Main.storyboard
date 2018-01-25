@@ -322,10 +322,10 @@
             </objects>
             <point key="canvasLocation" x="852" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Finish Goal View Controller-->
         <scene sceneID="yew-ZG-wX9">
             <objects>
-                <viewController id="pUz-Ft-s0X" sceneMemberID="viewController">
+                <viewController id="pUz-Ft-s0X" customClass="FinishGoalViewController" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1r1-Rt-HhE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,6 +394,9 @@
                                 <state key="normal" title="CREATE GOAL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createGoalButtonPressed:" destination="pUz-Ft-s0X" eventType="touchUpInside" id="ceK-rI-0X7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -410,10 +413,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K4n-nv-g7e"/>
                     </view>
+                    <connections>
+                        <outlet property="createGoalButton" destination="mi3-Aa-Ght" id="4Ib-IC-Rs3"/>
+                        <outlet property="pointsTextField" destination="jaj-Yy-K3R" id="GlC-IC-8YM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Vh-Ii-DaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1573.5999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1622" y="134"/>
         </scene>
     </scenes>
     <resources>
