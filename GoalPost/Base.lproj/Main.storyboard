@@ -384,31 +384,43 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mi3-Aa-Ght">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJ9-dt-ndW">
+                                <rect key="frame" x="0.0" y="211" width="375" height="456"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mi3-Aa-Ght">
+                                        <rect key="frame" x="0.0" y="406" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="77H-oh-wee"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="CREATE GOAL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createGoalButtonPressed:" destination="pUz-Ft-s0X" eventType="touchUpInside" id="ceK-rI-0X7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="77H-oh-wee"/>
+                                    <constraint firstAttribute="trailing" secondItem="mi3-Aa-Ght" secondAttribute="trailing" id="2YJ-ZY-KKN"/>
+                                    <constraint firstAttribute="bottom" secondItem="mi3-Aa-Ght" secondAttribute="bottom" id="MVp-xF-BXe"/>
+                                    <constraint firstItem="mi3-Aa-Ght" firstAttribute="leading" secondItem="nJ9-dt-ndW" secondAttribute="leading" id="Pyl-XZ-ULV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="CREATE GOAL">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="createGoalButtonPressed:" destination="pUz-Ft-s0X" eventType="touchUpInside" id="ceK-rI-0X7"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nJ9-dt-ndW" firstAttribute="top" secondItem="Nas-Yq-mfC" secondAttribute="bottom" constant="8" id="4by-zq-GN6"/>
                             <constraint firstItem="Rhy-0t-rtl" firstAttribute="top" secondItem="1r1-Rt-HhE" secondAttribute="top" id="9xy-1x-kuI"/>
-                            <constraint firstItem="mi3-Aa-Ght" firstAttribute="leading" secondItem="K4n-nv-g7e" secondAttribute="leading" id="N4t-qW-J9A"/>
+                            <constraint firstItem="nJ9-dt-ndW" firstAttribute="trailing" secondItem="K4n-nv-g7e" secondAttribute="trailing" id="L2J-Tp-DfI"/>
                             <constraint firstItem="Rhy-0t-rtl" firstAttribute="trailing" secondItem="K4n-nv-g7e" secondAttribute="trailing" id="Ny7-Hj-JEo"/>
-                            <constraint firstItem="mi3-Aa-Ght" firstAttribute="bottom" secondItem="K4n-nv-g7e" secondAttribute="bottom" id="Ooz-eH-An6"/>
+                            <constraint firstItem="nJ9-dt-ndW" firstAttribute="leading" secondItem="K4n-nv-g7e" secondAttribute="leading" id="PeC-be-nKX"/>
                             <constraint firstItem="Nas-Yq-mfC" firstAttribute="leading" secondItem="K4n-nv-g7e" secondAttribute="leading" constant="20" id="Pys-Ij-nyQ"/>
                             <constraint firstItem="K4n-nv-g7e" firstAttribute="trailing" secondItem="Nas-Yq-mfC" secondAttribute="trailing" constant="20" id="RHJ-Fj-uHa"/>
-                            <constraint firstItem="mi3-Aa-Ght" firstAttribute="trailing" secondItem="K4n-nv-g7e" secondAttribute="trailing" id="XnT-O1-uEM"/>
                             <constraint firstItem="Rhy-0t-rtl" firstAttribute="leading" secondItem="K4n-nv-g7e" secondAttribute="leading" id="jhg-xL-vxX"/>
+                            <constraint firstItem="nJ9-dt-ndW" firstAttribute="bottom" secondItem="K4n-nv-g7e" secondAttribute="bottom" id="kzo-x5-CyJ"/>
                             <constraint firstItem="Nas-Yq-mfC" firstAttribute="top" secondItem="Rhy-0t-rtl" secondAttribute="bottom" constant="20" id="rEW-lc-26x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K4n-nv-g7e"/>
@@ -420,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Vh-Ii-DaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="134"/>
+            <point key="canvasLocation" x="1621.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>
