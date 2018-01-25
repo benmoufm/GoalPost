@@ -29,6 +29,10 @@ class FinishGoalViewController: UIViewController, UITextFieldDelegate {
     }
 
     //MARK: - Actions
+    @IBAction func backButtonWasPressed(_ sender: Any) {
+        dismissDetail()
+    }
+
     @IBAction func createGoalButtonPressed(_ sender: Any) {
         // Pass data into Core Data Goal Model
     }
