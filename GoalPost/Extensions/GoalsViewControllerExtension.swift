@@ -25,4 +25,14 @@ extension GoalsViewController {
             completion(false)
         }
     }
+
+    func removeGoal(atIndexPath indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        managedContext.delete(goals[indexPath.row])
+        do {
+            try managedContext.save()
+        } catch {
+            debugPrint("Could not remove : \(error.localizedDescription)")
+        }
+    }
 }
