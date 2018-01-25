@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FinishGoalViewController: UIViewController {
+class FinishGoalViewController: UIViewController, UITextFieldDelegate {
     //MARK: - Outlets
     @IBOutlet weak var createGoalButton: UIButton!
     @IBOutlet weak var pointsTextField: UITextField!
@@ -19,6 +19,8 @@ class FinishGoalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        pointsTextField.delegate = self
+        createGoalButton.bindToKeyboard()
     }
 
     func initData(description: String, type: GoalType) {
