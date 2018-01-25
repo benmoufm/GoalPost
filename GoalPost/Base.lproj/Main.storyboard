@@ -182,6 +182,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="CoA-lb-RQ4" id="1zB-Ib-KXu"/>
                                             <outlet property="goalDescriptionLabel" destination="PTe-JL-K4E" id="vba-Dq-hOT"/>
                                             <outlet property="goalProgressLabel" destination="9ce-AP-M2X" id="bnX-S9-k3e"/>
                                             <outlet property="goalTypeLabel" destination="agx-sE-pr1" id="h2L-j1-qR6"/>
