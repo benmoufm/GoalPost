@@ -13,6 +13,9 @@ class GoalsViewController: UIViewController {
     //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
 
+    //MARK: - Variables
+    var goals = [Goal]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
