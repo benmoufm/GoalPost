@@ -12,6 +12,8 @@ class GoalsViewController: UIViewController {
 
     //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var undoView: UIView!
+    @IBOutlet weak var undoViewHeightConstraint: NSLayoutConstraint!
 
     //MARK: - Variables
     var goals = [Goal]()
@@ -51,6 +53,10 @@ class GoalsViewController: UIViewController {
             storyboard?.instantiateViewController(withIdentifier: "createGoalViewController")
             else { return }
         presentDetail(createGoalViewController)
+    }
+
+    @IBAction func undoButtonPressed(_ sender: Any) {
+        //TODO: Undo goal deletion
     }
 }
 
