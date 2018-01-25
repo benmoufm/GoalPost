@@ -190,6 +190,32 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xF8-nH-r6i">
+                                <rect key="frame" x="0.0" y="617" width="0.0" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Removed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQr-oo-ACN">
+                                        <rect key="frame" x="20" y="13.5" width="115.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13w-su-4SC">
+                                        <rect key="frame" x="-77" y="7" width="57" height="37"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="UNDO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TQr-oo-ACN" firstAttribute="leading" secondItem="xF8-nH-r6i" secondAttribute="leading" constant="20" id="Ge4-X9-vLT"/>
+                                    <constraint firstAttribute="trailing" secondItem="13w-su-4SC" secondAttribute="trailing" constant="20" id="IqZ-AA-oUK"/>
+                                    <constraint firstItem="TQr-oo-ACN" firstAttribute="centerY" secondItem="xF8-nH-r6i" secondAttribute="centerY" id="UtH-Kf-Efz"/>
+                                    <constraint firstAttribute="height" constant="50" id="hNc-JT-1iM"/>
+                                    <constraint firstItem="13w-su-4SC" firstAttribute="centerY" secondItem="xF8-nH-r6i" secondAttribute="centerY" id="xph-IR-ihX"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -197,8 +223,11 @@
                             <constraint firstItem="BYV-if-hfg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4g0-xF-vI2"/>
                             <constraint firstItem="k2a-kl-mHl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5he-jj-fZM"/>
                             <constraint firstItem="BYV-if-hfg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F4B-zy-aGn"/>
+                            <constraint firstItem="xF8-nH-r6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LSg-BO-LIF"/>
                             <constraint firstItem="jkG-u2-ybM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N8o-sg-cdK"/>
                             <constraint firstItem="BYV-if-hfg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g5R-nL-6GC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="xF8-nH-r6i" secondAttribute="trailing" id="gHI-dy-M8Z"/>
+                            <constraint firstItem="xF8-nH-r6i" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gY9-b6-rIA"/>
                             <constraint firstItem="BYV-if-hfg" firstAttribute="top" secondItem="k2a-kl-mHl" secondAttribute="bottom" id="klN-dn-Q8l"/>
                             <constraint firstItem="k2a-kl-mHl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lZJ-JT-cBN"/>
                             <constraint firstItem="k2a-kl-mHl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qJ5-oR-yzZ"/>
