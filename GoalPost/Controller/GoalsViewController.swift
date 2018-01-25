@@ -22,6 +22,20 @@ class GoalsViewController: UIViewController {
         tableView.dataSource = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetch { (success) in
+            if success {
+                if goals.count >= 1 {
+                    tableView.isHidden = false
+                } else {
+                    tableView.isHidden = true
+                }
+            }
+        }
+        tableView.reloadData()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
