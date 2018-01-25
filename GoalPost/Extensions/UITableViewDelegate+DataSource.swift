@@ -14,13 +14,13 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return goals.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "goalCell") as? GoalTableViewCell
             else { return UITableViewCell() }
-        cell.configureCell(description: "Test", type: .shortTerm, progressionAmount: 0)
+        cell.configureCell(goal: goals[indexPath.row])
         return cell
     }
 }
