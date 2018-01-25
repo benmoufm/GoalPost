@@ -39,7 +39,15 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource {
                 self.fetchCoreDataObjects()
                 tableView.deleteRows(at: [indexPath], with: .automatic)
         }
+
+        let addAction =
+            UITableViewRowAction(style: .normal, title: "ADD 1") { (rowAction, indexPath) in
+                self.setProgress(atIndexPath: indexPath)
+                tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+
         deleteAction.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-        return [deleteAction]
+        addAction.backgroundColor = #colorLiteral(red: 0.9385011792, green: 0.7164435983, blue: 0.3331357837, alpha: 1)
+        return [deleteAction, addAction]
     }
 }
