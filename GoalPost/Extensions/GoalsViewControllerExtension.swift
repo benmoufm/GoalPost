@@ -35,4 +35,19 @@ extension GoalsViewController {
             debugPrint("Could not remove : \(error.localizedDescription)")
         }
     }
+
+    func setProgress(atIndexPath indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        let chosenGoal = goals[indexPath.row]
+        if chosenGoal.goalProgressValue < chosenGoal.goalCompletionValue {
+            chosenGoal.goalProgressValue += 1
+        } else {
+            return
+        }
+        do {
+            try managedContext.save()
+        } catch {
+            debugPrint("Could not save progress : \(error.localizedDescription)")
+        }
+    }
 }
