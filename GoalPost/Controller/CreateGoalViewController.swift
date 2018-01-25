@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateGoalViewController: UIViewController {
+class CreateGoalViewController: UIViewController, UITextViewDelegate {
     //MARK: - Outlets
     @IBOutlet weak var goalTextView: UITextView!
     @IBOutlet weak var shortTermButton: UIButton!
@@ -23,6 +23,13 @@ class CreateGoalViewController: UIViewController {
         nextButton.bindToKeyboard()
         shortTermButton.setSelectedColor()
         longTermButton.setDeselectedColor()
+        goalTextView.delegate = self
+    }
+
+    //MARK: - UITextViewDelegate
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        goalTextView.text = ""
+        goalTextView.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
 
     //MARK : - Actions
