@@ -39,6 +39,14 @@ class CreateGoalViewController: UIViewController {
     }
 
     @IBAction func nextButtonPressed(_ sender: Any) {
+        if goalTextView.text != "" && goalTextView.text != "What is your goal ?" {
+            guard let finishGoalViewController =
+                storyboard?.instantiateViewController(withIdentifier: "finishGoalViewController")
+                as? FinishGoalViewController
+                else { return }
+            finishGoalViewController.initData(description: goalTextView.text!, type: goalType)
+            presentDetail(finishGoalViewController)
+        }
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {
