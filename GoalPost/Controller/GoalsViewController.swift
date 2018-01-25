@@ -24,6 +24,16 @@ class GoalsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fetchCoreDataObjects()
+        tableView.reloadData()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func fetchCoreDataObjects() {
         fetch { (success) in
             if success {
                 if goals.count >= 1 {
@@ -33,12 +43,6 @@ class GoalsViewController: UIViewController {
                 }
             }
         }
-        tableView.reloadData()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     //MARK: - Actions
