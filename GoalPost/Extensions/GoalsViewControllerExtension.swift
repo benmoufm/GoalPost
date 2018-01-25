@@ -27,6 +27,7 @@ extension GoalsViewController {
     }
 
     func removeGoal(atIndexPath indexPath: IndexPath) {
+        animateViewUp()
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
         managedContext.delete(goals[indexPath.row])
         do {
