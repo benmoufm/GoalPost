@@ -17,11 +17,13 @@ class GoalsViewController: UIViewController {
 
     //MARK: - Variables
     var goals = [Goal]()
+    var undoViewUp = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        addTapGesture()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -47,8 +49,14 @@ class GoalsViewController: UIViewController {
         }
     }
 
+    func addTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissUndoView))
+        tableView.addGestureRecognizer(tap)
+    }
+
     //MARK: - Animation functions
     func animateViewUp() {
+        undoViewUp = true
         undoViewHeightConstraint.constant = 50
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
@@ -56,9 +64,17 @@ class GoalsViewController: UIViewController {
     }
 
     func animateViewDown() {
+        undoViewUp = false
         undoViewHeightConstraint.constant = 0
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
+        }
+    }
+
+    @objc func dismissUndoView() {
+        if undoViewUp {
+            saveDeletion()
+            animateViewDown()
         }
     }
 

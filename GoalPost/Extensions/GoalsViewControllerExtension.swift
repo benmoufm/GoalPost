@@ -32,6 +32,15 @@ extension GoalsViewController {
         managedContext.delete(goals[indexPath.row])
     }
 
+    func saveDeletion() {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        do {
+            try managedContext.save()
+        } catch {
+            debugPrint("Could not remove : \(error.localizedDescription)")
+        }
+    }
+
     func undoRemoveGoal() {
         animateViewDown()
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
