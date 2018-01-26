@@ -30,10 +30,16 @@ extension GoalsViewController {
         animateViewUp()
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
         managedContext.delete(goals[indexPath.row])
+    }
+
+    func undoRemoveGoal() {
+        animateViewDown()
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        managedContext.rollback()
         do {
             try managedContext.save()
         } catch {
-            debugPrint("Could not remove : \(error.localizedDescription)")
+            debugPrint("Could not undo : \(error.localizedDescription)")
         }
     }
 

@@ -71,7 +71,9 @@ class GoalsViewController: UIViewController {
     }
 
     @IBAction func undoButtonPressed(_ sender: Any) {
-        //TODO: Undo goal deletion
+        undoRemoveGoal()
+        fetchCoreDataObjects()
+        tableView.reloadData()
     }
 }
 
