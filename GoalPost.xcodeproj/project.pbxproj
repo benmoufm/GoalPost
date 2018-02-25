@@ -8,22 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		86237DF52018C3AB00A845EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237DF42018C3AB00A845EF /* AppDelegate.swift */; };
-		86237DF72018C3AB00A845EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237DF62018C3AB00A845EF /* ViewController.swift */; };
+		86237DF72018C3AB00A845EF /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237DF62018C3AB00A845EF /* GoalsViewController.swift */; };
 		86237DFA2018C3AB00A845EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86237DF82018C3AB00A845EF /* Main.storyboard */; };
 		86237DFD2018C3AB00A845EF /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86237DFB2018C3AB00A845EF /* GoalPost.xcdatamodeld */; };
 		86237DFF2018C3AB00A845EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86237DFE2018C3AB00A845EF /* Assets.xcassets */; };
 		86237E022018C3AB00A845EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86237E002018C3AB00A845EF /* LaunchScreen.storyboard */; };
+		86237E0E2018CD9700A845EF /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */; };
+		86237E102018D32400A845EF /* UITableViewDelegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E0F2018D32400A845EF /* UITableViewDelegate+DataSource.swift */; };
+		86237E122018D4B900A845EF /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E112018D4B900A845EF /* GoalType.swift */; };
+		86237E142018D92D00A845EF /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E132018D92D00A845EF /* CreateGoalViewController.swift */; };
+		86237E162018DA3D00A845EF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E152018DA3D00A845EF /* UIViewControllerExtension.swift */; };
+		86237E182018E06F00A845EF /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E172018E06F00A845EF /* UIViewExtension.swift */; };
+		86237E1A2018E38600A845EF /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86237E192018E38600A845EF /* UIButtonExtension.swift */; };
+		86CCC8DE2019CFFF006845B9 /* FinishGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CCC8DD2019CFFF006845B9 /* FinishGoalViewController.swift */; };
+		86CCC8E02019DC5A006845B9 /* GoalsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CCC8DF2019DC5A006845B9 /* GoalsViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86237DF12018C3AB00A845EF /* GoalPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86237DF42018C3AB00A845EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86237DF62018C3AB00A845EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86237DF62018C3AB00A845EF /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		86237DF92018C3AB00A845EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86237DFC2018C3AB00A845EF /* GoalPost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoalPost.xcdatamodel; sourceTree = "<group>"; };
 		86237DFE2018C3AB00A845EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86237E012018C3AB00A845EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86237E032018C3AB00A845EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		86237E0F2018D32400A845EF /* UITableViewDelegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+DataSource.swift"; sourceTree = "<group>"; };
+		86237E112018D4B900A845EF /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		86237E132018D92D00A845EF /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
+		86237E152018DA3D00A845EF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		86237E172018E06F00A845EF /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		86237E192018E38600A845EF /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		86CCC8DD2019CFFF006845B9 /* FinishGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalViewController.swift; sourceTree = "<group>"; };
+		86CCC8DF2019DC5A006845B9 /* GoalsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +91,9 @@
 		86237E092018C3CF00A845EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				86237DF62018C3AB00A845EF /* ViewController.swift */,
+				86237DF62018C3AB00A845EF /* GoalsViewController.swift */,
+				86237E132018D92D00A845EF /* CreateGoalViewController.swift */,
+				86CCC8DD2019CFFF006845B9 /* FinishGoalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -81,6 +101,7 @@
 		86237E0A2018C3D700A845EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				86237E0D2018CD9700A845EF /* GoalTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +109,7 @@
 		86237E0B2018C3FA00A845EF /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				86237E112018D4B900A845EF /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -95,6 +117,11 @@
 		86237E0C2018C40200A845EF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				86237E0F2018D32400A845EF /* UITableViewDelegate+DataSource.swift */,
+				86237E152018DA3D00A845EF /* UIViewControllerExtension.swift */,
+				86237E172018E06F00A845EF /* UIViewExtension.swift */,
+				86237E192018E38600A845EF /* UIButtonExtension.swift */,
+				86CCC8DF2019DC5A006845B9 /* GoalsViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -171,9 +198,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86237DF72018C3AB00A845EF /* ViewController.swift in Sources */,
+				86237E0E2018CD9700A845EF /* GoalTableViewCell.swift in Sources */,
+				86237E1A2018E38600A845EF /* UIButtonExtension.swift in Sources */,
+				86237E142018D92D00A845EF /* CreateGoalViewController.swift in Sources */,
+				86237DF72018C3AB00A845EF /* GoalsViewController.swift in Sources */,
+				86237E122018D4B900A845EF /* GoalType.swift in Sources */,
+				86237E162018DA3D00A845EF /* UIViewControllerExtension.swift in Sources */,
 				86237DF52018C3AB00A845EF /* AppDelegate.swift in Sources */,
+				86CCC8E02019DC5A006845B9 /* GoalsViewControllerExtension.swift in Sources */,
+				86CCC8DE2019CFFF006845B9 /* FinishGoalViewController.swift in Sources */,
+				86237E182018E06F00A845EF /* UIViewExtension.swift in Sources */,
 				86237DFD2018C3AB00A845EF /* GoalPost.xcdatamodeld in Sources */,
+				86237E102018D32400A845EF /* UITableViewDelegate+DataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
